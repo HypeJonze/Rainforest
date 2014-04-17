@@ -1,7 +1,16 @@
-<h1>Products</h1>
+<div class="jumbotron">
+<h1>Welcome To <i>Rainforest</i></h1>
+</div>
 
 
 <%= image_tag "https://24.media.tumblr.com/tumblr_m5blbcK9Ea1ry6x8wo1_500.jpg" %>
+</br>
+
+<div class = "container">
+<%= link_to "Add New Product", "/products/new" %>
+</div>
+</br>
+
 <div class="productloop">
 <% (@products).each do |i| %>
 <div class="productitem">
