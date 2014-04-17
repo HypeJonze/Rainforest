@@ -1,0 +1,13 @@
+<h1>Products</h1>
+
+
+<%= image_tag "https://24.media.tumblr.com/tumblr_m5blbcK9Ea1ry6x8wo1_500.jpg" %>
+<div class="productloop">
+<% (@products).each do |i| %>
+<div class="productitem">
+	<p>Name: <%= i.name %></p>
+	<p>Description: <%= i.description %></p>
+	<p>Price: <%= i.price_in_cents %></p>
+	</div>
+<% end %>
+</div>
